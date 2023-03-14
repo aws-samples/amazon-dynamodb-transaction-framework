@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BootCamp.DataAccess.Contract\BootCamp.DataAccess.Contract.csproj" />
+    <ProjectReference Include="..\BootCamp.DataAccess\BootCamp.DataAccess.csproj" />
+    <ProjectReference Include="..\BootCamp.Service.Contract\BootCamp.Service.Contract.csproj" />
+  </ItemGroup>
+
+</Project>
