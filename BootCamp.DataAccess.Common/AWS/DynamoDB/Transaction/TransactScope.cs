@@ -75,6 +75,7 @@ namespace BootCamp.DataAccess.Common.AWS.DynamoDB.Transaction
             if ((_client is object) && (_transactRequest is object) && (_transactRequest.TransactItems.Count > 0))
             {
                 await _client.TransactWriteItemsAsync(_transactRequest).ConfigureAwait(false);
+                _transactRequest = null;
             }
         }
 
